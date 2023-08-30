@@ -14,4 +14,8 @@ exports.addPlace = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
 // Weitere Controller-Funktionen für Abruf, Aktualisierung und Löschung von Orten...
+=======
+// Weitere Controller-Funktionen für Abruf, Aktualisierung und Löschung von Orten... 
+>>>>>>> 8856deca275cf870e7be1fa6adcda84b31f88ede

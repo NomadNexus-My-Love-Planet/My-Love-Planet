@@ -13,7 +13,10 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongodb": "^6.0.0",
+<<<<<<< HEAD
     "mongoose": "^7.4.5",
+=======
+>>>>>>> 8856deca275cf870e7be1fa6adcda84b31f88ede
     "mongosh": "^1.10.6"
   },
   "devDependencies": {
