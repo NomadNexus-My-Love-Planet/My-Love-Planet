@@ -37,6 +37,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
 
 const port = 8080;
@@ -51,27 +52,30 @@ async function run() {
             useUnifiedTopology: true
         });
 
-        const UserSchema = new mongoose.Schema({
-            name: String,
-            age: Number
+        const MapsSchema = new mongoose.Schema({
+            city: String,
+            state: String,
+            postalcode: Number
         });
 
-        const User = mongoose.model('User', UserSchema);
+        const Maps = mongoose.model('Maps', MapsSchema);
 
-        const newUser = new User({
-            name: 'Test',
-            age: 40
+        const newMaps = new Maps({
+            city: 'Siegen',
+            state: 'NRW',
+            postalcode: 579072
         });
 
-        await newUser.save();
+        await newMaps.save();
 
-        console.log('User created successfully');
+        console.log('Maps Created Successfully');
     } catch (error) {
         console.error('Error:', error);
     }
 }
 
 // Rufen Sie die run-Funktion auf
+
 run();
 
 app.get('/', (req, res) => {
@@ -79,7 +83,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
 
 

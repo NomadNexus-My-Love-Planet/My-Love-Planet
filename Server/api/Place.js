@@ -2,7 +2,7 @@
 // eines Orts in der Datenbank. Hier werden Titel,
 // Koordinaten, Details, Bilder, Benutzer-ID und andere Felder festgelegt.
 
-const mongoose = require('mongoose');
+
 
 const placeSchema = new mongoose.Schema({
   title: String,
