@@ -68,7 +68,6 @@ app.get('/info', async (req, res) => {
     res.status(200).json(bank);
 })
 
-
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
