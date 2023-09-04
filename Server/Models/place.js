@@ -61,7 +61,6 @@ const ortSchema = new mongoose.Schema(
     note: {type: String},
 
     visit: {type: Boolean},
-
   },
   { timestamps: true }
 );

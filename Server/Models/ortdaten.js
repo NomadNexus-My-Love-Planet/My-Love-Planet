@@ -10,7 +10,6 @@ const ortdaten = new mongoose.Schema(
   },
 
   { timestamps: true }
-  
 );
 
 
