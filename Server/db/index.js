@@ -12,6 +12,7 @@ dataBase.on("error", (error) => {
 console.log(error);
 });
 
+
 dataBase.once("connected", () => {
 console.log("Database Connected");
 });
