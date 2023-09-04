@@ -56,7 +56,7 @@ const ortSchema = new mongoose.Schema(
     },
     country: {type:String},
   
-    reminder: {type: Boolean},
+    reminder: {type: String},
     
     note: {type: String},
 
