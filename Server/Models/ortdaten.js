@@ -4,7 +4,7 @@ const ortdaten = new mongoose.Schema(
   {
 
     zipCode: {type:String},
-     
+    
     street: {type: String},
 
   },
