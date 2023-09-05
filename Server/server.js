@@ -62,13 +62,11 @@ app.get('/allplaces', async (req, res) => {
     res.status(200).json(allplaces);
 })
 
-
 app.get('/info', async (req, res) => {
     const bank = await Ort.find({})
     .catch((err) => res.status(500).send("Server Error"));
     res.status(200).json(bank);
 })
-
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
